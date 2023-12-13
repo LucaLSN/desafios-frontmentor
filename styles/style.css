@@ -1,0 +1,114 @@
+/* 
+## Colors
+
+### Primary
+
+- Light red: hsl(0, 100%, 67%)
+- Orangey yellow: hsl(39, 100%, 56%)
+- Green teal: hsl(166, 100%, 37%)
+- Cobalt blue: hsl(234, 85%, 45%)
+
+## Gradients
+
+- Light slate blue (background): hsl(252, 100%, 67%)
+- Light royal blue (background): hsl(241, 81%, 54%)
+
+- Violet blue (circle): hsla(256, 72%, 46%, 1)
+- Persian blue (circle): hsla(241, 72%, 46%, 0)
+
+
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Pale blue: hsl(221, 100%, 96%)
+- Light lavender: hsl(241, 100%, 89%)
+- Dark gray blue: hsl(224, 30%, 27%) */
+body {
+  margin: 0px;
+}
+.container-master {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+/* CAIXA DA ESQUERDA */
+.box-left {
+  width: 220px; /* box quadrado */
+  height: 300px; /* box quadrado */
+  background-color: blue;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  border-radius: 10px;
+  flex-direction: column;
+}
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-circle {
+  display: inline;
+  text-align: center;
+  color: hsl(221, 100%, 96%);
+}
+.text-circle .score {
+  font-size: 40px;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 700;
+}
+
+.circle-score-left {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: blue;
+  background-image: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+}
+.box-left h2:first-of-type {
+  text-align: center;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: small;
+  color: hsl(221, 100%, 96%);
+  padding-top: 15px;
+}
+.sub-score {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Hanken Grotesk", sans-serif;
+  color: hsl(0, 0%, 100%);
+}
+.descricao-score {
+  text-align: center;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: x-small;
+  color: hsl(0, 0%, 100%);
+  padding: 10px;
+  opacity: 0.8;
+}
+/* CAIXA DA DIREITA */
+.box-right {
+  width: 220px; /* box quadrado */
+  height: 300px; /* box quadrado */
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px hsl(221, 100%, 96%);
+  justify-content: center;
+}
+.summary {
+  padding: 10px;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: medium;
+}
+.reaction{
+  background-color: 
+}
